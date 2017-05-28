@@ -1,7 +1,9 @@
 #!/bin/bash
 
+LOGUSER = `loguser`
+
 if (whiptail --title "Setup OpenVPN" --yesno "You are about to configure your \
-Raspberry Pi as a VPN server running OpenVPN. Are you sure you want to \
+Raspberry Pi as a VPN server running OpenVPN as user $LOGUSER. Are you sure you want to \
 continue?" 8 78) then
  whiptail --title "Setup OpenVPN" --infobox "OpenVPN will be installed and \
  configured." 8 78
