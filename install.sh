@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOGUSER = `loguser`
+LOGUSER = "admin"
 
 if (whiptail --title "Setup OpenVPN" --yesno "You are about to configure your \
 Raspberry Pi as a VPN server running OpenVPN as user $LOGUSER. Are you sure you want to \
